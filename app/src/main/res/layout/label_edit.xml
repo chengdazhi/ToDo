@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/no_choose_grey"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_green"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/light_green"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_yellow"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/light_yellow"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_blue"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/blue"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_red"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@color/light_red"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_orange"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/orange"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_brown"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/brown"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_purple"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@color/dark_purple"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label_pink"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@color/pink"
+            android:text="@string/label_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/label_name_edittext"
+        android:text="@string/label_default"
+        android:textColor="@color/font_event"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_edit_cancel"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/cancel"
+            android:textColor="@color/orange"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:background="@color/divider_grey"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/label_edit_delete"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/delete"
+            android:textColor="@color/font_event"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:background="@color/divider_grey"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/label_edit_ok"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/ok"
+            android:textColor="@color/light_green"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

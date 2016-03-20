@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.app.chengdazhi.todo.components.EventFragment">
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView_event"
+        android:layout_width="match_parent"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="1dp"
+        android:divider="@color/divider_grey"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/blank_linearlayout"
+        android:gravity="center"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/fragment_blank"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/blank_title"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/font_event"
+            android:text="无进行中任务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/blank_add_text"
+                android:textSize="18sp"
+                android:textColor="@color/font_event"
+                android:text="添加一个任务"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/blank_add_picture"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textSize="30sp"
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

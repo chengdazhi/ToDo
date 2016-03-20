@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.chengdazhi.todo" >
+
+    <!-- 闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 振动器权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/todo_logo"
+        android:label="@string/app_name"
+        android:theme="@style/MyNavigationDrawerTheme" >
+        <activity
+            android:name=".components.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".components.EventActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_event"
+            android:launchMode="singleTask"
+            android:theme="@style/NewEventTheme" >
+        </activity>
+        <activity
+            android:name=".components.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <receiver android:name=".components.AlarmReceiver" >
+            <intent-filter>
+                <action android:name="todo.alarm.action" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".components.NotificationReceiver"/>
+<!--
+        <receiver android:name=".widget.MyWidgetProvider"
+            android:label="ToDo"
+            android:icon="@drawable/todo_logo">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_xml"/>
+
+        </receiver>
+        -->
+
+        <service android:name=".components.AlarmService" >
+        </service>
+<!--
+        <service
+            android:name=".widget.MyWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+            -->
+
+        <activity
+            android:name=".components.DialogEventActivity"
+            android:label="@string/title_activity_dialog_event"
+            android:launchMode="singleTask"
+            android:taskAffinity=".DialogEventActivity"
+            android:theme="@style/DialogTransparent" >
+        </activity>
+        <activity
+            android:name=".components.SettingsActivity"
+            android:theme="@style/NewEventTheme"
+            android:label="@string/title_activity_settings" >
+        </activity>
+    </application>
+
+</manifest>

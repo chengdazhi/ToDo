@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar">
+        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimaryDark">#558b2f</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="drawerType">@integer/DRAWERTYPE_NO_HEADER</item>
+        <item name="learningPattern">false</item>
+    </style>
+
+    <style name="NewEventTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/light_green</item>
+    <!--    <item name="android:actionBarStyle">@style/NewEventActionBar</item>-->
+    <!--    <item name="actionBarStyle">@style/NewEventActionBar</item>-->
+        <item name="colorControlActivated">@color/light_green</item>
+    </style>
+
+    <style name="NewEventActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/light_green</item>
+        <item name="background">@color/light_green</item>
+    </style>
+
+    <style name="DialogTransparent" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>
